@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Día del Niño | Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+  <!-- <script defer src="script.js"></script> -->
+</head>
+<body>
+  <header class="site-header">
+    <button class="nav-toggle" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <h1 class="brand">🎈 Día del Niño</h1>
+  </header>
+
+  <div class="layout">
+    <nav id="sidebar" class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a class="active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main class="site-main">
+      <h2>Contacto</h2>
+      <p>¿Quieres proponernos un juego o actividad? ¡Escríbenos!</p>
+
+      <form id="contactForm" class="form-card" novalidate>
+        <div class="form-field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu idea…" required></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <button class="btn" type="submit">Enviar</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <small>© 2025 Día del Niño</small>
+  </footer>
+</body>
+</html>
